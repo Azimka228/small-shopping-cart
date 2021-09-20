@@ -1,0 +1,103 @@
+.Modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0,0,0.4);
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Modal_content {
+    width: 100%;
+    max-width: 1205px;
+}
+.Modal_title {
+    height: 186px;
+    width: 100%;
+    background-color: #8BC53E;
+    padding-top: 22px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.Modal_ingridients {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding-top: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+.Modal_avatar {
+    border-radius: 100%;
+    border: 7px solid #81B739;
+    width: 92px;
+    height: 92px;
+    margin-right: 23px;
+}
+.Modal_avatar img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+.Modal_title {
+    display: flex;
+}
+.Modal_title_content_Heading {
+    margin-bottom: 8px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    color: #FFFFFF;
+}
+.Modal_title_content_text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+.Modal_title_content_price {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-top: 9px;
+    position: relative;
+}
+.Modal_ingridients_card {
+    padding-top: 29px;
+    padding-bottom: 22px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+.Modal_ingridients_items {
+    display: flex;
+}
+.Modal_ingridients_card_title {
+    margin-bottom: 19px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #4D4D4C;
+}
+.Modal_ingridients_card_btn {
+    display: flex;
+    
+}
+.Modal_ingridients_card_btn:hover {
+    cursor: pointer;
+}
+.Modal_ingridients_card_btn_price {
+    margin-left: 50%;
+}

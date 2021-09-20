@@ -1,0 +1,70 @@
+.col-2 img {
+    width: 100%;
+}
+Aside {
+    padding: 0 15px 0 15px;
+}
+.BasketItem {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #FAFAFA;
+    padding-top: 20px;
+    padding:8px;
+    margin-bottom: 10px;
+}
+.BasketItem_content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.qtyBtns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid #E7E7E7;
+}
+.qtyBtns>button {
+    border: none;
+    background-color:#FAFAFA ;
+}
+.qtyBtns>button:hover {
+    cursor: pointer;
+}
+.qtyBtns>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qtyBtns>div:hover{
+    cursor: default;
+}
+.BasketItem_name {
+    font-size: 13px;
+    color: #4D4D4C;
+    font-weight: bold;
+}
+.Button_Checkout button {
+    width: 129px;
+    height: 29px;
+    font-size: 14px;
+    background-color: #81B739;
+    color:#FAFAFA;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.5s ease-in-out;
+}
+.Button_Checkout button:hover {
+    background-color: #FAFAFA;
+    color:#81B739;
+    border: 1px solid #81B739;
+}
+.Chekout {
+    display: flex;
+    justify-content: space-between;
+}
+.TotalPrice {
+    display: flex;
+    align-items: center;
+}
+.Scroll {
+    overflow: scroll;
+}
