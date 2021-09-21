@@ -1,0 +1,10 @@
+.gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 546px;
+    z-index: 1;
+    background-image: url(./homeGradient.png);
+    background-size: cover;
+}
