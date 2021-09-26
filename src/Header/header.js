@@ -1,4 +1,4 @@
-import Menu__background from './Menu_background/Menu__background';
+import React from 'react';
 import Menu from './Menu/Menu';
 import Image from './Image/image';
 import Gradient from './gradient/gradient';

@@ -1,15 +1,20 @@
 import Header from './Header/header';
-import Main from './components/Main';
-import Basket from './components/Basket';
 import Footer from './footer/footer';
 import Swiper from './Swiper/swiper';
 import KidsMeal from './content/Kids Meal/content';
 import TravelBox from './content/Travel Box/content';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import data from './data';
-import { useState } from 'react';
+import { useState,  } from 'react';
 import Modal from './Modal/Modal';
+import React from 'react';
+
+
+
+
+const Meal = [KidsMeal, TravelBox]
 function App() {
+  console.log(Meal)
   const { products, Eating } = data;
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
@@ -36,11 +41,12 @@ function App() {
       );
     }
   };
-  const [ModalActive,SetModalActive] = useState(false)
-  const ModalReturn =(el) => {
+  const [ModalActive, SetModalActive] = useState(false)
+  const ModalReturn = (el) => {
     console.log(el)
-    SetModalActive({...el})
+    SetModalActive({ ...el })
   }
+  
   return (
     <BrowserRouter>
       <div className="App">
@@ -49,24 +55,23 @@ function App() {
         <div className="Main">
           <Switch>
             <Route path="/content/Kids Meal" component={() => {
-              return <KidsMeal products={products} onAdd={onAdd} cartItems={cartItems} SetModalActive={SetModalActive}
-              ModalReturn={ModalReturn}
+              return <KidsMeal products={products} cartItems={cartItems} SetModalActive={SetModalActive}
+                ModalReturn={ModalReturn}
                 onAdd={onAdd}
                 onRemove={onRemove} />
             }} />
             <Route path="/content/Travel Box" component={() => {
               return <TravelBox Eating={Eating} onAdd={onAdd} cartItems={cartItems}
-                onAdd={onAdd}
                 onRemove={onRemove} />
             }} />
-             <Route path="/" component={() => {
-              return <KidsMeal products={products} onAdd={onAdd} cartItems={cartItems} SetModalActive={SetModalActive}
-              ModalReturn={ModalReturn}
+            <Route path="/" component={() => {
+              return <KidsMeal products={products} cartItems={cartItems} SetModalActive={SetModalActive}
+                ModalReturn={ModalReturn}
                 onAdd={onAdd}
                 onRemove={onRemove} />
             }} />
           </Switch>
-          {ModalActive && <Modal SetModalActive={SetModalActive} products={products} ModalActive={ModalActive}/>}
+          {ModalActive && <Modal SetModalActive={SetModalActive} products={products} ModalActive={ModalActive} />}
         </div>
 
         <Footer />

@@ -1,6 +1,5 @@
-
+import React from 'react';
 import './Modal.css';
-
 function Modal({ SetModalActive, ModalActive }) {
   console.log(Object.keys(ModalActive.ADD))
   return (
@@ -43,7 +42,6 @@ function Modal({ SetModalActive, ModalActive }) {
         </div>
       </div>
     </div>
-
   );
 }
 

@@ -39,11 +39,18 @@
     align-items: center;
     height: 100%;
     max-width: 1270px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .Menu_logo{
     display: block;
     position: relative;
     width: 85px;
+    
+}
+.Menu_logo a {
+    height: 100%;
+    width: 100%;
     
 }
 .Menu_logo img{
@@ -67,17 +74,9 @@
     cursor: pointer;
 }
 .GoCheckout{
-    margin-left:25px ;
+    margin-left:30px ;
 }
-.GoCheckout::before{
-    background-image: url(Chekout.png);
-    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
-    color: #ffffff;
-    margin-right: 7px;
-    margin-left: 0px;
-    font-size: 23px;
-    position: absolute;
-}
+
 .GoCheckout_score{
     opacity: 0.85;
     background-color: #81B739;
@@ -87,9 +86,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 6;
+}
+.GoCheckout_score:hover {
+    cursor: pointer;
 }
 .GoCheckout_score>span{
     color: #fff;
+}
+.GoCheckout_score>span::before{
+    content: "\f1c9";
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    color: #ffffff;
+    right: 372px;
+    font-size: 23px;
+    position: absolute;
+    z-index: 4;
 }
 .GoToHomePage{
     margin-left: 43px;
@@ -99,6 +111,7 @@
     width: 124px;
     height: 32px;
     border: 1px solid #fff;
+    margin-right: 37px;
 }
 .GoToHomePage .RecommendTitle {
     color: #fff;
@@ -110,6 +123,31 @@
     cursor: pointer;
     
 }
-.burger-menu{
-    background-image: url(BurgerMenu.png);
+.burger-menu {
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-right: 27px;
+}
+.burger:hover::before {
+    background-color: green;
+}
+.burger-menu::before{
+    content: '\f197';
+}
+.Call_Number {
+    font-family: roboto, sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 29px;
+}
+.Call_Number::before {
+    font: normal normal normal 25px/1 'Material-Design-Iconic-Font';
+    content: '\f2be';
+    margin-right: 8px;
+}
+.Call_Number:hover{
+    cursor: default;
 }
