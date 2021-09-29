@@ -1,0 +1,68 @@
+.Image {
+    background-image: url(https://api.zaatarwzeit.net/content/uploads/styling/zaatarwzeit-delivery-feb.jpg);
+    width: 100%;
+    position: relative;
+    height: 546px;
+    background-position: center;
+    background-size: cover;
+}
+.Title{
+    height: 546px;
+    position: relative;
+    box-flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_wrapper {
+        position: relative;
+        height: auto;
+        z-index: 2;
+    }
+    &_text {
+        font-family: roboto, sans-serif;
+        font-weight: 600;
+        font-size: 60px;
+        color: #fff;
+        line-height: 42px;
+        text-align: center;
+        padding-top: 62px;
+    }
+    &:hover {
+        cursor: default;
+    }
+    &_textWithLines{
+        margin-top: 19px;
+        width: auto;
+        position: relative;
+        margin-left: auto;
+        text-align: center;
+        margin-right: auto;
+        height: 20px;
+        z-index: 2;
+        &_text {
+            display: inline-block;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 96px;
+            width: auto;
+            padding-right: 96px;
+            font-size: 20px;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 4px rgb(0 0 0 / 65%);
+        }
+    }
+}
+.line {
+    position: absolute;
+    height: 1px;
+    width: 74px;
+    top: 11px;
+    background-color: #FFFFFF;
+}
+.left {
+    left: 0px;
+}
+.right {
+    right: 0px;
+}

@@ -1,9 +1,7 @@
 import React from 'react';
 import logo from './logo.png'
-import './Menu.css';
-import {
-  NavLink
-} from "react-router-dom";
+import './Menu.scss';
+import { NavLink} from "react-router-dom";
 function Menu(props) {
   const { countCartItems } = props
   return (
@@ -26,8 +24,6 @@ function Menu(props) {
         <div className="Call_Number">1523</div>
       </div>
     </div>
-
   );
 }
-
 export default Menu;

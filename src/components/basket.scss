@@ -11,36 +11,38 @@ Aside {
     padding-top: 20px;
     padding:8px;
     margin-bottom: 10px;
+    &_content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    &_name {
+        font-size: 13px;
+        color: #4D4D4C;
+        font-weight: bold;
+    }
 }
-.BasketItem_content {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
+
 .qtyBtns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border: 1px solid #E7E7E7;
+    &>button {
+        border: none;
+        background-color:#FAFAFA ;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            cursor: default;
+        }
+    }
 }
-.qtyBtns>button {
-    border: none;
-    background-color:#FAFAFA ;
-}
-.qtyBtns>button:hover {
-    cursor: pointer;
-}
-.qtyBtns>div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.qtyBtns>div:hover{
-    cursor: default;
-}
-.BasketItem_name {
-    font-size: 13px;
-    color: #4D4D4C;
-    font-weight: bold;
-}
+
 .Button_Checkout button {
     width: 129px;
     height: 29px;
@@ -51,12 +53,13 @@ Aside {
     cursor: pointer;
     border: 1px solid transparent;
     transition: 0.5s ease-in-out;
+    &:hover {
+        background-color: #FAFAFA;
+        color:#81B739;
+        border: 1px solid #81B739;
+    }
 }
-.Button_Checkout button:hover {
-    background-color: #FAFAFA;
-    color:#81B739;
-    border: 1px solid #81B739;
-}
+
 .Chekout {
     display: flex;
     justify-content: space-between;

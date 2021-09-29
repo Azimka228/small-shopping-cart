@@ -2,7 +2,7 @@ import React from 'react';
 import Menu from './Menu/Menu';
 import Image from './Image/image';
 import Gradient from './gradient/gradient';
-import './header.css';
+import './header.scss';
 
 function Header(props) {
    const {countCartItems} = props

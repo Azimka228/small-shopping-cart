@@ -1,5 +1,5 @@
 import React from 'react';
-import './image.css';
+import './image.scss';
 
 function Image() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Modal.css';
+import './Modal.scss';
 function Modal({ SetModalActive, ModalActive }) {
   console.log(Object.keys(ModalActive.ADD))
   return (

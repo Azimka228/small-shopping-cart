@@ -1,5 +1,5 @@
 import React from 'react';
-import './Menu__background.css';
+import './Menu__background.scss';
 
 function Menu__background() {
   return (

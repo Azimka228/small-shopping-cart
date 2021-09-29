@@ -8,13 +8,7 @@ import data from './data';
 import { useState,  } from 'react';
 import Modal from './Modal/Modal';
 import React from 'react';
-
-
-
-
-const Meal = [KidsMeal, TravelBox]
 function App() {
-  console.log(Meal)
   const { products, Eating } = data;
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
