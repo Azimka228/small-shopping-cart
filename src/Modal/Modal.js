@@ -1,7 +1,9 @@
 import React from 'react';
 import './Modal.scss';
 function Modal({ SetModalActive, ModalActive }) {
-  console.log(Object.keys(ModalActive.ADD))
+  const handleClick = e => {
+     console.log(e.target.parentNode)
+  }
   return (
     <div className='Modal' onClick={() => SetModalActive(false)}>
       <div className="Modal_content" onClick={(e) => e.stopPropagation()}>
@@ -20,21 +22,15 @@ function Modal({ SetModalActive, ModalActive }) {
             <div className="Modal_ingridients_card">
               <div className="Modal_ingridients_card_title">ADD</div>
               <div className="Modal_ingridients_card_btn">
-                <div className="Modal_ingridients_card_btn_title">{ModalActive.ADD[0].title}</div>
+                <input onChange={handleClick.bind(this)} type="checkbox"/>dsdsds{ModalActive.ADD[0].title}
                 <div className="Modal_ingridients_card_btn_price">{ModalActive.ADD[0].price}</div>
               </div>
-            </div>
-            <div className="Modal_ingridients_card">
-              <div className="Modal_ingridients_card_title">ADD</div>
               <div className="Modal_ingridients_card_btn">
-                <div className="Modal_ingridients_card_btn_title">{ModalActive.ADD[0].title}</div>
+                <input onChange={handleClick.bind(this)} type="checkbox"/>dsdsds{ModalActive.ADD[0].title}
                 <div className="Modal_ingridients_card_btn_price">{ModalActive.ADD[0].price}</div>
               </div>
-            </div>
-            <div className="Modal_ingridients_card">
-              <div className="Modal_ingridients_card_title">ADD</div>
               <div className="Modal_ingridients_card_btn">
-                <div className="Modal_ingridients_card_btn_title">{ModalActive.ADD[0].title}</div>
+                <input onChange={handleClick.bind(this)} type="checkbox"/>dsdsds{ModalActive.ADD[0].title}
                 <div className="Modal_ingridients_card_btn_price">{ModalActive.ADD[0].price}</div>
               </div>
             </div>

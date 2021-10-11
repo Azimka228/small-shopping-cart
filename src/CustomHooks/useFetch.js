@@ -22,7 +22,7 @@ const useFetch = (url) => {
                 .catch(error => {
                     setError(error)
                 })
-        }, 1000)
+        }, 0)
     }, [])
     return {data,ispending,error}
 }
